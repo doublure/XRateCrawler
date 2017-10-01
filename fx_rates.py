@@ -96,12 +96,12 @@ def judge_value(currency_dic, collection_name):
 
 def send_email(content, receiver='song_chunpeng@163.com,'):
 
-    sender = 'doublure@163.com' # 这里输入发件人地址
+    sender = 'xxx@xxx.com' # input mail address of sender
     recipient = receiver
     subject = 'lowest FX Rate reached since 30 days'
     smtpserver = 'smtp.163.com' # 这里输入smtp地址
-    username = 'doublure@163.com' # 这里输入用户名
-    password = '19870615' # 这里输入密码
+    username = 'xxx@xxx.com' # 这里输入用户名
+    password = 'xxxxxxxx' # 这里输入密码
 
     msg = MIMEText(content, 'plain', 'utf-8')
     msg['subject'] = Header(subject, 'utf-8')
@@ -135,4 +135,4 @@ if __name__ == '__main__':
             text_to_mail += text_alert
 
     if text_to_mail:
-        send_email(text_to_mail, 'song_chunpeng@163.com')
+        send_email(text_to_mail, 'xxxx@163.com')
