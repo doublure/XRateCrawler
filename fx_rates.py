@@ -95,7 +95,7 @@ def judge_value(currency_dic, collection_name):
         return output_alert
 
 
-def send_email(content, receiver='song_chunpeng@163.com,'):
+def send_email(content, receiver='xxxx@163.com,'):
 
     sender = 'xxx@xxx.com' # input mail address of sender
     recipient = receiver
